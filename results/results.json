@@ -1,0 +1,4639 @@
+{
+  "datasets": {
+    "febrl1": {
+      "description": "500 people, one duplicate each, light corruption",
+      "counts": {
+        "records": 1000,
+        "people": 500,
+        "true_pairs": 500,
+        "max_records_per_person": 2
+      },
+      "arms": {
+        "A": {
+          "label": "single key, exact-match comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 500,
+            "candidate_pairs": 351,
+            "true_pairs_reachable": 335,
+            "true_pairs_lost_to_blocking": 165,
+            "blocking_recall": 0.67,
+            "lost_by_condition": {
+              "surname_changed": 117,
+              "given_changed": 77,
+              "address_changed": 76,
+              "city_changed": 35,
+              "dob_changed": 26,
+              "postal_changed": 25,
+              "identifier_changed": 16,
+              "dob_missing": 15,
+              "surname_missing": 6,
+              "state_changed": 2,
+              "city_missing": 2,
+              "state_missing": 2,
+              "state_added": 1,
+              "given_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 173,
+              "under_merge_scored_only": 8
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 0,
+              "under_merge": 177,
+              "under_merge_scored_only": 12
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 0,
+              "under_merge": 178,
+              "under_merge_scored_only": 13
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 0,
+              "under_merge": 182,
+              "under_merge_scored_only": 17
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 182,
+              "under_merge_scored_only": 17
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 0,
+              "under_merge": 190,
+              "under_merge_scored_only": 25
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 190,
+              "under_merge_scored_only": 25
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 195,
+              "under_merge_scored_only": 30
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 195,
+              "under_merge_scored_only": 30
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 202,
+              "under_merge_scored_only": 37
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 202,
+              "under_merge_scored_only": 37
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 215,
+              "under_merge_scored_only": 50
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 215,
+              "under_merge_scored_only": 50
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 242,
+              "under_merge_scored_only": 77
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 250,
+              "under_merge_scored_only": 85
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 251,
+              "under_merge_scored_only": 86
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 271,
+              "under_merge_scored_only": 106
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 273,
+              "under_merge_scored_only": 108
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 320,
+              "under_merge_scored_only": 155
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 329,
+              "under_merge_scored_only": 164
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 411,
+              "under_merge_scored_only": 246
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 411,
+              "under_merge_scored_only": 246
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 427,
+              "under_merge_scored_only": 262
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 427,
+              "under_merge_scored_only": 262
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 427,
+              "under_merge_scored_only": 262
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 427,
+              "under_merge_scored_only": 262
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 114,
+            "true_pairs_in_band": 114,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 215
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 173,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 173,
+              "under_merge_scored_only": 8
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 173,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 173,
+              "under_merge_scored_only": 8
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 173,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 173,
+              "under_merge_scored_only": 8
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 173,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 173,
+              "under_merge_scored_only": 8
+            }
+          },
+          "by_condition_at_0.80": {
+            "identifier_changed": {
+              "true_pairs": 34,
+              "missed": 34,
+              "miss_rate": 1.0
+            },
+            "dob_changed": {
+              "true_pairs": 4,
+              "missed": 4,
+              "miss_rate": 1.0
+            },
+            "surname_changed": {
+              "true_pairs": 52,
+              "missed": 32,
+              "miss_rate": 0.6154
+            },
+            "given_changed": {
+              "true_pairs": 67,
+              "missed": 38,
+              "miss_rate": 0.5672
+            },
+            "state_missing": {
+              "true_pairs": 2,
+              "missed": 1,
+              "miss_rate": 0.5
+            },
+            "postal_changed": {
+              "true_pairs": 59,
+              "missed": 23,
+              "miss_rate": 0.3898
+            },
+            "address_changed": {
+              "true_pairs": 166,
+              "missed": 55,
+              "miss_rate": 0.3313
+            },
+            "city_missing": {
+              "true_pairs": 4,
+              "missed": 1,
+              "miss_rate": 0.25
+            },
+            "city_changed": {
+              "true_pairs": 101,
+              "missed": 23,
+              "miss_rate": 0.2277
+            },
+            "given_missing": {
+              "true_pairs": 14,
+              "missed": 3,
+              "miss_rate": 0.2143
+            },
+            "state_changed": {
+              "true_pairs": 16,
+              "missed": 1,
+              "miss_rate": 0.0625
+            },
+            "identical_copy": {
+              "true_pairs": 31,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "B": {
+          "label": "single key, domain comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 500,
+            "candidate_pairs": 351,
+            "true_pairs_reachable": 335,
+            "true_pairs_lost_to_blocking": 165,
+            "blocking_recall": 0.67,
+            "lost_by_condition": {
+              "surname_changed": 117,
+              "given_changed": 77,
+              "address_changed": 76,
+              "city_changed": 35,
+              "dob_changed": 26,
+              "postal_changed": 25,
+              "identifier_changed": 16,
+              "dob_missing": 15,
+              "surname_missing": 6,
+              "state_changed": 2,
+              "city_missing": 2,
+              "state_missing": 2,
+              "state_added": 1,
+              "given_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 4,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 4,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 4,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 3,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 166,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 168,
+              "under_merge_scored_only": 3
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 169,
+              "under_merge_scored_only": 4
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 171,
+              "under_merge_scored_only": 6
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 182,
+              "under_merge_scored_only": 17
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 185,
+              "under_merge_scored_only": 20
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 195,
+              "under_merge_scored_only": 30
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 219,
+              "under_merge_scored_only": 54
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 259,
+              "under_merge_scored_only": 94
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 280,
+              "under_merge_scored_only": 115
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 297,
+              "under_merge_scored_only": 132
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 427,
+              "under_merge_scored_only": 262
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 20,
+            "true_pairs_in_band": 20,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 165
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 165,
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 165,
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 165,
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 165,
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 165,
+              "under_merge_scored_only": 0
+            }
+          },
+          "by_condition_at_0.80": {
+            "state_missing": {
+              "true_pairs": 2,
+              "missed": 1,
+              "miss_rate": 0.5
+            },
+            "dob_changed": {
+              "true_pairs": 4,
+              "missed": 1,
+              "miss_rate": 0.25
+            },
+            "given_missing": {
+              "true_pairs": 14,
+              "missed": 1,
+              "miss_rate": 0.0714
+            },
+            "identifier_changed": {
+              "true_pairs": 34,
+              "missed": 2,
+              "miss_rate": 0.0588
+            },
+            "postal_changed": {
+              "true_pairs": 59,
+              "missed": 2,
+              "miss_rate": 0.0339
+            },
+            "city_changed": {
+              "true_pairs": 101,
+              "missed": 2,
+              "miss_rate": 0.0198
+            },
+            "given_changed": {
+              "true_pairs": 67,
+              "missed": 1,
+              "miss_rate": 0.0149
+            },
+            "address_changed": {
+              "true_pairs": 166,
+              "missed": 2,
+              "miss_rate": 0.012
+            },
+            "surname_changed": {
+              "true_pairs": 52,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "city_missing": {
+              "true_pairs": 4,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_changed": {
+              "true_pairs": 16,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "identical_copy": {
+              "true_pairs": 31,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "C": {
+          "label": "multi-key, domain comparators",
+          "blocking": {
+            "mode": "multi",
+            "true_pairs": 500,
+            "candidate_pairs": 549,
+            "true_pairs_reachable": 499,
+            "true_pairs_lost_to_blocking": 1,
+            "blocking_recall": 0.998,
+            "lost_by_condition": {
+              "dob_changed": 1,
+              "identifier_changed": 1,
+              "surname_changed": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 14,
+              "under_merge": 2,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 14,
+              "under_merge": 2,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 13,
+              "under_merge": 2,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 11,
+              "under_merge": 2,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 4,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 4,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 6,
+              "under_merge_scored_only": 5
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 8,
+              "under_merge_scored_only": 7
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 12,
+              "under_merge_scored_only": 11
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 17,
+              "under_merge_scored_only": 16
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 22,
+              "under_merge_scored_only": 21
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 29,
+              "under_merge_scored_only": 28
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 31,
+              "under_merge_scored_only": 30
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 45,
+              "under_merge_scored_only": 44
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 50,
+              "under_merge_scored_only": 49
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 53,
+              "under_merge_scored_only": 52
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 67,
+              "under_merge_scored_only": 66
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 97,
+              "under_merge_scored_only": 96
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 107,
+              "under_merge_scored_only": 106
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 125,
+              "under_merge_scored_only": 124
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 163,
+              "under_merge_scored_only": 162
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 209,
+              "under_merge_scored_only": 208
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 233,
+              "under_merge_scored_only": 232
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 258,
+              "under_merge_scored_only": 257
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 416,
+              "under_merge_scored_only": 415
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 85,
+            "true_pairs_in_band": 85,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 22
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 3,
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 3,
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 3,
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 3,
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3,
+              "under_merge_scored_only": 2
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 29,
+              "missed": 26,
+              "miss_rate": 0.8966
+            },
+            "state_missing": {
+              "true_pairs": 4,
+              "missed": 2,
+              "miss_rate": 0.5
+            },
+            "given_changed": {
+              "true_pairs": 144,
+              "missed": 29,
+              "miss_rate": 0.2014
+            },
+            "surname_changed": {
+              "true_pairs": 168,
+              "missed": 29,
+              "miss_rate": 0.1726
+            },
+            "postal_changed": {
+              "true_pairs": 84,
+              "missed": 14,
+              "miss_rate": 0.1667
+            },
+            "identifier_changed": {
+              "true_pairs": 49,
+              "missed": 8,
+              "miss_rate": 0.1633
+            },
+            "given_missing": {
+              "true_pairs": 15,
+              "missed": 2,
+              "miss_rate": 0.1333
+            },
+            "dob_missing": {
+              "true_pairs": 15,
+              "missed": 2,
+              "miss_rate": 0.1333
+            },
+            "address_changed": {
+              "true_pairs": 242,
+              "missed": 29,
+              "miss_rate": 0.1198
+            },
+            "city_changed": {
+              "true_pairs": 136,
+              "missed": 14,
+              "miss_rate": 0.1029
+            },
+            "city_missing": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_changed": {
+              "true_pairs": 18,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "surname_missing": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "identical_copy": {
+              "true_pairs": 31,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "febrl2": {
+      "description": "4,000 people, up to 6 duplicates, moderate",
+      "counts": {
+        "records": 5000,
+        "people": 4000,
+        "true_pairs": 1934,
+        "max_records_per_person": 6
+      },
+      "arms": {
+        "A": {
+          "label": "single key, exact-match comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 1934,
+            "candidate_pairs": 1770,
+            "true_pairs_reachable": 1230,
+            "true_pairs_lost_to_blocking": 704,
+            "blocking_recall": 0.6359875904860393,
+            "lost_by_condition": {
+              "surname_changed": 522,
+              "address_changed": 392,
+              "given_changed": 334,
+              "city_changed": 220,
+              "postal_changed": 160,
+              "dob_changed": 154,
+              "identifier_changed": 89,
+              "dob_missing": 66,
+              "identical_copy": 45,
+              "surname_missing": 40,
+              "state_changed": 39,
+              "given_missing": 18,
+              "city_missing": 16,
+              "state_missing": 12,
+              "dob_added": 6,
+              "surname_added": 3,
+              "city_added": 3,
+              "address_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 771,
+              "under_merge_scored_only": 67
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 0,
+              "under_merge": 797,
+              "under_merge_scored_only": 93
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 0,
+              "under_merge": 798,
+              "under_merge_scored_only": 94
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 0,
+              "under_merge": 809,
+              "under_merge_scored_only": 105
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 809,
+              "under_merge_scored_only": 105
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 0,
+              "under_merge": 868,
+              "under_merge_scored_only": 164
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 868,
+              "under_merge_scored_only": 164
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 884,
+              "under_merge_scored_only": 180
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 884,
+              "under_merge_scored_only": 180
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 957,
+              "under_merge_scored_only": 253
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 961,
+              "under_merge_scored_only": 257
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 1022,
+              "under_merge_scored_only": 318
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 1023,
+              "under_merge_scored_only": 319
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 1184,
+              "under_merge_scored_only": 480
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 1230,
+              "under_merge_scored_only": 526
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 1237,
+              "under_merge_scored_only": 533
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 1293,
+              "under_merge_scored_only": 589
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 1298,
+              "under_merge_scored_only": 594
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 1430,
+              "under_merge_scored_only": 726
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 1443,
+              "under_merge_scored_only": 739
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 1703,
+              "under_merge_scored_only": 999
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 1706,
+              "under_merge_scored_only": 1002
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 1770,
+              "under_merge_scored_only": 1066
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 1770,
+              "under_merge_scored_only": 1066
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 1770,
+              "under_merge_scored_only": 1066
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 1770,
+              "under_merge_scored_only": 1066
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 421,
+            "true_pairs_in_band": 421,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 1022
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 771,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 771,
+              "under_merge_scored_only": 67
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 771,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 771,
+              "under_merge_scored_only": 67
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 771,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 771,
+              "under_merge_scored_only": 67
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 771,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 771,
+              "under_merge_scored_only": 67
+            }
+          },
+          "by_condition_at_0.80": {
+            "identifier_changed": {
+              "true_pairs": 159,
+              "missed": 159,
+              "miss_rate": 1.0
+            },
+            "dob_changed": {
+              "true_pairs": 25,
+              "missed": 25,
+              "miss_rate": 1.0
+            },
+            "state_added": {
+              "true_pairs": 1,
+              "missed": 1,
+              "miss_rate": 1.0
+            },
+            "given_changed": {
+              "true_pairs": 364,
+              "missed": 288,
+              "miss_rate": 0.7912
+            },
+            "surname_changed": {
+              "true_pairs": 292,
+              "missed": 225,
+              "miss_rate": 0.7705
+            },
+            "state_missing": {
+              "true_pairs": 16,
+              "missed": 11,
+              "miss_rate": 0.6875
+            },
+            "postal_changed": {
+              "true_pairs": 305,
+              "missed": 180,
+              "miss_rate": 0.5902
+            },
+            "address_changed": {
+              "true_pairs": 716,
+              "missed": 383,
+              "miss_rate": 0.5349
+            },
+            "city_changed": {
+              "true_pairs": 416,
+              "missed": 174,
+              "miss_rate": 0.4183
+            },
+            "given_missing": {
+              "true_pairs": 33,
+              "missed": 13,
+              "miss_rate": 0.3939
+            },
+            "state_changed": {
+              "true_pairs": 49,
+              "missed": 14,
+              "miss_rate": 0.2857
+            },
+            "city_missing": {
+              "true_pairs": 24,
+              "missed": 6,
+              "miss_rate": 0.25
+            },
+            "address_missing": {
+              "true_pairs": 4,
+              "missed": 1,
+              "miss_rate": 0.25
+            },
+            "identical_copy": {
+              "true_pairs": 169,
+              "missed": 38,
+              "miss_rate": 0.2249
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "B": {
+          "label": "single key, domain comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 1934,
+            "candidate_pairs": 1770,
+            "true_pairs_reachable": 1230,
+            "true_pairs_lost_to_blocking": 704,
+            "blocking_recall": 0.6359875904860393,
+            "lost_by_condition": {
+              "surname_changed": 522,
+              "address_changed": 392,
+              "given_changed": 334,
+              "city_changed": 220,
+              "postal_changed": 160,
+              "dob_changed": 154,
+              "identifier_changed": 89,
+              "dob_missing": 66,
+              "identical_copy": 45,
+              "surname_missing": 40,
+              "state_changed": 39,
+              "given_missing": 18,
+              "city_missing": 16,
+              "state_missing": 12,
+              "dob_added": 6,
+              "surname_added": 3,
+              "city_added": 3,
+              "address_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 131,
+              "under_merge": 704,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 114,
+              "under_merge": 704,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 73,
+              "under_merge": 704,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 31,
+              "under_merge": 704,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 15,
+              "under_merge": 704,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 8,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 2,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 706,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 706,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 706,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 706,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 706,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 708,
+              "under_merge_scored_only": 4
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 720,
+              "under_merge_scored_only": 16
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 724,
+              "under_merge_scored_only": 20
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 733,
+              "under_merge_scored_only": 29
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 752,
+              "under_merge_scored_only": 48
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 813,
+              "under_merge_scored_only": 109
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 843,
+              "under_merge_scored_only": 139
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 890,
+              "under_merge_scored_only": 186
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 1023,
+              "under_merge_scored_only": 319
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 1177,
+              "under_merge_scored_only": 473
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 1270,
+              "under_merge_scored_only": 566
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 1369,
+              "under_merge_scored_only": 665
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 1770,
+              "under_merge_scored_only": 1066
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 137,
+            "true_pairs_in_band": 137,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 706
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 705,
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 705,
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 705,
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 705,
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 705,
+              "under_merge_scored_only": 1
+            }
+          },
+          "by_condition_at_0.80": {
+            "identifier_changed": {
+              "true_pairs": 159,
+              "missed": 9,
+              "miss_rate": 0.0566
+            },
+            "postal_changed": {
+              "true_pairs": 305,
+              "missed": 17,
+              "miss_rate": 0.0557
+            },
+            "given_changed": {
+              "true_pairs": 364,
+              "missed": 18,
+              "miss_rate": 0.0495
+            },
+            "dob_changed": {
+              "true_pairs": 25,
+              "missed": 1,
+              "miss_rate": 0.04
+            },
+            "state_changed": {
+              "true_pairs": 49,
+              "missed": 1,
+              "miss_rate": 0.0204
+            },
+            "address_changed": {
+              "true_pairs": 716,
+              "missed": 14,
+              "miss_rate": 0.0196
+            },
+            "city_changed": {
+              "true_pairs": 416,
+              "missed": 6,
+              "miss_rate": 0.0144
+            },
+            "surname_changed": {
+              "true_pairs": 292,
+              "missed": 4,
+              "miss_rate": 0.0137
+            },
+            "identical_copy": {
+              "true_pairs": 169,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "city_missing": {
+              "true_pairs": 24,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_missing": {
+              "true_pairs": 33,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_missing": {
+              "true_pairs": 16,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 4,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "C": {
+          "label": "multi-key, domain comparators",
+          "blocking": {
+            "mode": "multi",
+            "true_pairs": 1934,
+            "candidate_pairs": 3409,
+            "true_pairs_reachable": 1919,
+            "true_pairs_lost_to_blocking": 15,
+            "blocking_recall": 0.9922440537745605,
+            "lost_by_condition": {
+              "identifier_changed": 15,
+              "dob_changed": 12,
+              "given_changed": 12,
+              "surname_changed": 10,
+              "address_changed": 10,
+              "city_changed": 7,
+              "postal_changed": 4,
+              "dob_missing": 2,
+              "state_changed": 1,
+              "surname_missing": 1,
+              "dob_added": 1,
+              "identical_copy": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 478,
+              "under_merge": 20,
+              "under_merge_scored_only": 5
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 408,
+              "under_merge": 20,
+              "under_merge_scored_only": 5
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 316,
+              "under_merge": 22,
+              "under_merge_scored_only": 7
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 233,
+              "under_merge": 23,
+              "under_merge_scored_only": 8
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 139,
+              "under_merge": 24,
+              "under_merge_scored_only": 9
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 70,
+              "under_merge": 27,
+              "under_merge_scored_only": 12
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 28,
+              "under_merge": 34,
+              "under_merge_scored_only": 19
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 11,
+              "under_merge": 55,
+              "under_merge_scored_only": 40
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 6,
+              "under_merge": 62,
+              "under_merge_scored_only": 47
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 3,
+              "under_merge": 70,
+              "under_merge_scored_only": 55
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 2,
+              "under_merge": 97,
+              "under_merge_scored_only": 82
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 115,
+              "under_merge_scored_only": 100
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 145,
+              "under_merge_scored_only": 130
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 162,
+              "under_merge_scored_only": 147
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 253,
+              "under_merge_scored_only": 238
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 277,
+              "under_merge_scored_only": 262
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 309,
+              "under_merge_scored_only": 294
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 371,
+              "under_merge_scored_only": 356
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 505,
+              "under_merge_scored_only": 490
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 562,
+              "under_merge_scored_only": 547
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 628,
+              "under_merge_scored_only": 613
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 821,
+              "under_merge_scored_only": 806
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 1021,
+              "under_merge_scored_only": 1006
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 1130,
+              "under_merge_scored_only": 1115
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 1266,
+              "under_merge_scored_only": 1251
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 1747,
+              "under_merge_scored_only": 1732
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 447,
+            "true_pairs_in_band": 447,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 115
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 62,
+              "threshold": 0.62,
+              "over_merge": 28,
+              "under_merge": 34,
+              "under_merge_scored_only": 19
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 100,
+              "threshold": 0.68,
+              "over_merge": 3,
+              "under_merge": 70,
+              "under_merge_scored_only": 55
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 115,
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 115,
+              "under_merge_scored_only": 100
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 115,
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 115,
+              "under_merge_scored_only": 100
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 167,
+              "missed": 136,
+              "miss_rate": 0.8144
+            },
+            "surname_added": {
+              "true_pairs": 3,
+              "missed": 1,
+              "miss_rate": 0.3333
+            },
+            "state_changed": {
+              "true_pairs": 87,
+              "missed": 21,
+              "miss_rate": 0.2414
+            },
+            "given_changed": {
+              "true_pairs": 686,
+              "missed": 157,
+              "miss_rate": 0.2289
+            },
+            "identifier_changed": {
+              "true_pairs": 233,
+              "missed": 53,
+              "miss_rate": 0.2275
+            },
+            "postal_changed": {
+              "true_pairs": 461,
+              "missed": 97,
+              "miss_rate": 0.2104
+            },
+            "surname_changed": {
+              "true_pairs": 804,
+              "missed": 165,
+              "miss_rate": 0.2052
+            },
+            "dob_added": {
+              "true_pairs": 5,
+              "missed": 1,
+              "miss_rate": 0.2
+            },
+            "given_missing": {
+              "true_pairs": 51,
+              "missed": 10,
+              "miss_rate": 0.1961
+            },
+            "state_missing": {
+              "true_pairs": 28,
+              "missed": 5,
+              "miss_rate": 0.1786
+            },
+            "address_changed": {
+              "true_pairs": 1098,
+              "missed": 146,
+              "miss_rate": 0.133
+            },
+            "city_missing": {
+              "true_pairs": 40,
+              "missed": 5,
+              "miss_rate": 0.125
+            },
+            "city_changed": {
+              "true_pairs": 629,
+              "missed": 78,
+              "miss_rate": 0.124
+            },
+            "dob_missing": {
+              "true_pairs": 64,
+              "missed": 5,
+              "miss_rate": 0.0781
+            },
+            "surname_missing": {
+              "true_pairs": 39,
+              "missed": 3,
+              "miss_rate": 0.0769
+            },
+            "identical_copy": {
+              "true_pairs": 213,
+              "missed": 10,
+              "miss_rate": 0.0469
+            },
+            "city_added": {
+              "true_pairs": 3,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 5,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "state_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "febrl3": {
+      "description": "2,000 people, up to 6 duplicates, heavy",
+      "counts": {
+        "records": 5000,
+        "people": 2000,
+        "true_pairs": 6538,
+        "max_records_per_person": 6
+      },
+      "arms": {
+        "A": {
+          "label": "single key, exact-match comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 6538,
+            "candidate_pairs": 4555,
+            "true_pairs_reachable": 4012,
+            "true_pairs_lost_to_blocking": 2526,
+            "blocking_recall": 0.6136433159987764,
+            "lost_by_condition": {
+              "surname_changed": 1978,
+              "address_changed": 1535,
+              "given_changed": 1275,
+              "city_changed": 866,
+              "postal_changed": 678,
+              "dob_changed": 498,
+              "identifier_changed": 327,
+              "dob_missing": 160,
+              "state_changed": 151,
+              "surname_missing": 142,
+              "identical_copy": 123,
+              "given_missing": 85,
+              "state_missing": 54,
+              "city_missing": 47,
+              "dob_added": 16,
+              "address_missing": 8,
+              "surname_added": 6,
+              "given_added": 3,
+              "city_added": 2
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2753,
+              "under_merge_scored_only": 227
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 0,
+              "under_merge": 2844,
+              "under_merge_scored_only": 318
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 0,
+              "under_merge": 2859,
+              "under_merge_scored_only": 333
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 0,
+              "under_merge": 2939,
+              "under_merge_scored_only": 413
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 2946,
+              "under_merge_scored_only": 420
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 0,
+              "under_merge": 3156,
+              "under_merge_scored_only": 630
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3169,
+              "under_merge_scored_only": 643
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 3228,
+              "under_merge_scored_only": 702
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 3231,
+              "under_merge_scored_only": 705
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 3396,
+              "under_merge_scored_only": 870
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 3419,
+              "under_merge_scored_only": 893
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 3579,
+              "under_merge_scored_only": 1053
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 3585,
+              "under_merge_scored_only": 1059
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 4195,
+              "under_merge_scored_only": 1669
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 4317,
+              "under_merge_scored_only": 1791
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 4327,
+              "under_merge_scored_only": 1801
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 4568,
+              "under_merge_scored_only": 2042
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 4585,
+              "under_merge_scored_only": 2059
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 5036,
+              "under_merge_scored_only": 2510
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 5105,
+              "under_merge_scored_only": 2579
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 5931,
+              "under_merge_scored_only": 3405
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 5936,
+              "under_merge_scored_only": 3410
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 6082,
+              "under_merge_scored_only": 3556
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 6082,
+              "under_merge_scored_only": 3556
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 6082,
+              "under_merge_scored_only": 3556
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 6082,
+              "under_merge_scored_only": 3556
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 1526,
+            "true_pairs_in_band": 1526,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 3579
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 2753,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2753,
+              "under_merge_scored_only": 227
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 2753,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2753,
+              "under_merge_scored_only": 227
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 2753,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2753,
+              "under_merge_scored_only": 227
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 2753,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2753,
+              "under_merge_scored_only": 227
+            }
+          },
+          "by_condition_at_0.80": {
+            "identifier_changed": {
+              "true_pairs": 610,
+              "missed": 610,
+              "miss_rate": 1.0
+            },
+            "dob_changed": {
+              "true_pairs": 101,
+              "missed": 101,
+              "miss_rate": 1.0
+            },
+            "surname_changed": {
+              "true_pairs": 835,
+              "missed": 654,
+              "miss_rate": 0.7832
+            },
+            "given_changed": {
+              "true_pairs": 1337,
+              "missed": 1024,
+              "miss_rate": 0.7659
+            },
+            "postal_changed": {
+              "true_pairs": 897,
+              "missed": 501,
+              "miss_rate": 0.5585
+            },
+            "city_missing": {
+              "true_pairs": 74,
+              "missed": 41,
+              "miss_rate": 0.5541
+            },
+            "address_changed": {
+              "true_pairs": 2476,
+              "missed": 1331,
+              "miss_rate": 0.5376
+            },
+            "state_missing": {
+              "true_pairs": 64,
+              "missed": 34,
+              "miss_rate": 0.5312
+            },
+            "given_added": {
+              "true_pairs": 19,
+              "missed": 10,
+              "miss_rate": 0.5263
+            },
+            "state_changed": {
+              "true_pairs": 233,
+              "missed": 117,
+              "miss_rate": 0.5021
+            },
+            "city_added": {
+              "true_pairs": 6,
+              "missed": 3,
+              "miss_rate": 0.5
+            },
+            "city_changed": {
+              "true_pairs": 1442,
+              "missed": 623,
+              "miss_rate": 0.432
+            },
+            "given_missing": {
+              "true_pairs": 144,
+              "missed": 50,
+              "miss_rate": 0.3472
+            },
+            "identical_copy": {
+              "true_pairs": 436,
+              "missed": 78,
+              "miss_rate": 0.1789
+            },
+            "address_missing": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "B": {
+          "label": "single key, domain comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 6538,
+            "candidate_pairs": 4555,
+            "true_pairs_reachable": 4012,
+            "true_pairs_lost_to_blocking": 2526,
+            "blocking_recall": 0.6136433159987764,
+            "lost_by_condition": {
+              "surname_changed": 1978,
+              "address_changed": 1535,
+              "given_changed": 1275,
+              "city_changed": 866,
+              "postal_changed": 678,
+              "dob_changed": 498,
+              "identifier_changed": 327,
+              "dob_missing": 160,
+              "state_changed": 151,
+              "surname_missing": 142,
+              "identical_copy": 123,
+              "given_missing": 85,
+              "state_missing": 54,
+              "city_missing": 47,
+              "dob_added": 16,
+              "address_missing": 8,
+              "surname_added": 6,
+              "given_added": 3,
+              "city_added": 2
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 155,
+              "under_merge": 2526,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 134,
+              "under_merge": 2526,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 90,
+              "under_merge": 2527,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 38,
+              "under_merge": 2528,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 33,
+              "under_merge": 2529,
+              "under_merge_scored_only": 3
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 14,
+              "under_merge": 2529,
+              "under_merge_scored_only": 3
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 1,
+              "under_merge": 2530,
+              "under_merge_scored_only": 4
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 1,
+              "under_merge": 2533,
+              "under_merge_scored_only": 7
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 2537,
+              "under_merge_scored_only": 11
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 2542,
+              "under_merge_scored_only": 16
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 2545,
+              "under_merge_scored_only": 19
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 2547,
+              "under_merge_scored_only": 21
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 2551,
+              "under_merge_scored_only": 25
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 2563,
+              "under_merge_scored_only": 37
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 2599,
+              "under_merge_scored_only": 73
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 2622,
+              "under_merge_scored_only": 96
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 2661,
+              "under_merge_scored_only": 135
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 2714,
+              "under_merge_scored_only": 188
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 2888,
+              "under_merge_scored_only": 362
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 3009,
+              "under_merge_scored_only": 483
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 3133,
+              "under_merge_scored_only": 607
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 3494,
+              "under_merge_scored_only": 968
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 4070,
+              "under_merge_scored_only": 1544
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 4455,
+              "under_merge_scored_only": 1929
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 4762,
+              "under_merge_scored_only": 2236
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 6082,
+              "under_merge_scored_only": 3556
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 462,
+            "true_pairs_in_band": 462,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 2547
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 2531,
+              "threshold": 0.62,
+              "over_merge": 1,
+              "under_merge": 2530,
+              "under_merge_scored_only": 4
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 2537,
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 2537,
+              "under_merge_scored_only": 11
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 2537,
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 2537,
+              "under_merge_scored_only": 11
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 2537,
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 2537,
+              "under_merge_scored_only": 11
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 101,
+              "missed": 23,
+              "miss_rate": 0.2277
+            },
+            "identifier_changed": {
+              "true_pairs": 610,
+              "missed": 51,
+              "miss_rate": 0.0836
+            },
+            "postal_changed": {
+              "true_pairs": 897,
+              "missed": 64,
+              "miss_rate": 0.0713
+            },
+            "given_changed": {
+              "true_pairs": 1337,
+              "missed": 76,
+              "miss_rate": 0.0568
+            },
+            "city_missing": {
+              "true_pairs": 74,
+              "missed": 3,
+              "miss_rate": 0.0405
+            },
+            "address_changed": {
+              "true_pairs": 2476,
+              "missed": 76,
+              "miss_rate": 0.0307
+            },
+            "state_changed": {
+              "true_pairs": 233,
+              "missed": 7,
+              "miss_rate": 0.03
+            },
+            "surname_changed": {
+              "true_pairs": 835,
+              "missed": 20,
+              "miss_rate": 0.024
+            },
+            "given_missing": {
+              "true_pairs": 144,
+              "missed": 3,
+              "miss_rate": 0.0208
+            },
+            "city_changed": {
+              "true_pairs": 1442,
+              "missed": 27,
+              "miss_rate": 0.0187
+            },
+            "state_missing": {
+              "true_pairs": 64,
+              "missed": 1,
+              "miss_rate": 0.0156
+            },
+            "identical_copy": {
+              "true_pairs": 436,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
+              "true_pairs": 19,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "city_added": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "C": {
+          "label": "multi-key, domain comparators",
+          "blocking": {
+            "mode": "multi",
+            "true_pairs": 6538,
+            "candidate_pairs": 7813,
+            "true_pairs_reachable": 6495,
+            "true_pairs_lost_to_blocking": 43,
+            "blocking_recall": 0.9934230651575405,
+            "lost_by_condition": {
+              "identifier_changed": 43,
+              "dob_changed": 35,
+              "address_changed": 34,
+              "surname_changed": 29,
+              "postal_changed": 24,
+              "given_changed": 24,
+              "city_changed": 18,
+              "state_changed": 4,
+              "identical_copy": 3,
+              "dob_missing": 1,
+              "city_missing": 1,
+              "given_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 515,
+              "under_merge": 61,
+              "under_merge_scored_only": 18
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 448,
+              "under_merge": 65,
+              "under_merge_scored_only": 22
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 361,
+              "under_merge": 67,
+              "under_merge_scored_only": 24
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 237,
+              "under_merge": 82,
+              "under_merge_scored_only": 39
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 177,
+              "under_merge": 103,
+              "under_merge_scored_only": 60
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 70,
+              "under_merge": 116,
+              "under_merge_scored_only": 73
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 10,
+              "under_merge": 143,
+              "under_merge_scored_only": 100
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 2,
+              "under_merge": 221,
+              "under_merge_scored_only": 178
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 265,
+              "under_merge_scored_only": 222
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 303,
+              "under_merge_scored_only": 260
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 403,
+              "under_merge_scored_only": 360
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 504,
+              "under_merge_scored_only": 461
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 568,
+              "under_merge_scored_only": 525
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 670,
+              "under_merge_scored_only": 627
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 930,
+              "under_merge_scored_only": 887
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 1018,
+              "under_merge_scored_only": 975
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 1131,
+              "under_merge_scored_only": 1088
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 1359,
+              "under_merge_scored_only": 1316
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 1721,
+              "under_merge_scored_only": 1678
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 1942,
+              "under_merge_scored_only": 1899
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 2173,
+              "under_merge_scored_only": 2130
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 2804,
+              "under_merge_scored_only": 2761
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 3526,
+              "under_merge_scored_only": 3483
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 3967,
+              "under_merge_scored_only": 3924
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 4396,
+              "under_merge_scored_only": 4353
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 5999,
+              "under_merge_scored_only": 5956
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 1438,
+            "true_pairs_in_band": 1438,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 504
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 153,
+              "threshold": 0.62,
+              "over_merge": 10,
+              "under_merge": 143,
+              "under_merge_scored_only": 100
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 241,
+              "threshold": 0.64,
+              "over_merge": 2,
+              "under_merge": 221,
+              "under_merge_scored_only": 178
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 265,
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 265,
+              "under_merge_scored_only": 222
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 265,
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 265,
+              "under_merge_scored_only": 222
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 564,
+              "missed": 445,
+              "miss_rate": 0.789
+            },
+            "address_missing": {
+              "true_pairs": 14,
+              "missed": 4,
+              "miss_rate": 0.2857
+            },
+            "postal_changed": {
+              "true_pairs": 1551,
+              "missed": 421,
+              "miss_rate": 0.2714
+            },
+            "given_changed": {
+              "true_pairs": 2588,
+              "missed": 664,
+              "miss_rate": 0.2566
+            },
+            "dob_added": {
+              "true_pairs": 16,
+              "missed": 4,
+              "miss_rate": 0.25
+            },
+            "identifier_changed": {
+              "true_pairs": 894,
+              "missed": 223,
+              "miss_rate": 0.2494
+            },
+            "surname_changed": {
+              "true_pairs": 2784,
+              "missed": 671,
+              "miss_rate": 0.241
+            },
+            "state_changed": {
+              "true_pairs": 380,
+              "missed": 68,
+              "miss_rate": 0.1789
+            },
+            "state_missing": {
+              "true_pairs": 118,
+              "missed": 19,
+              "miss_rate": 0.161
+            },
+            "address_changed": {
+              "true_pairs": 3977,
+              "missed": 614,
+              "miss_rate": 0.1544
+            },
+            "city_changed": {
+              "true_pairs": 2290,
+              "missed": 340,
+              "miss_rate": 0.1485
+            },
+            "given_missing": {
+              "true_pairs": 228,
+              "missed": 27,
+              "miss_rate": 0.1184
+            },
+            "city_missing": {
+              "true_pairs": 120,
+              "missed": 13,
+              "miss_rate": 0.1083
+            },
+            "dob_missing": {
+              "true_pairs": 159,
+              "missed": 16,
+              "miss_rate": 0.1006
+            },
+            "surname_missing": {
+              "true_pairs": 142,
+              "missed": 10,
+              "miss_rate": 0.0704
+            },
+            "identical_copy": {
+              "true_pairs": 556,
+              "missed": 27,
+              "miss_rate": 0.0486
+            },
+            "given_added": {
+              "true_pairs": 22,
+              "missed": 1,
+              "miss_rate": 0.0455
+            },
+            "surname_added": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "city_added": {
+              "true_pairs": 8,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "febrl3_no_id": {
+      "description": "same file, national identifier removed (the US case)",
+      "counts": {
+        "records": 5000,
+        "people": 2000,
+        "true_pairs": 6538,
+        "max_records_per_person": 6
+      },
+      "arms": {
+        "A": {
+          "label": "single key, exact-match comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 6538,
+            "candidate_pairs": 4555,
+            "true_pairs_reachable": 4012,
+            "true_pairs_lost_to_blocking": 2526,
+            "blocking_recall": 0.6136433159987764,
+            "lost_by_condition": {
+              "surname_changed": 1978,
+              "address_changed": 1535,
+              "given_changed": 1275,
+              "city_changed": 866,
+              "postal_changed": 678,
+              "dob_changed": 498,
+              "dob_missing": 160,
+              "identical_copy": 151,
+              "state_changed": 151,
+              "surname_missing": 142,
+              "given_missing": 85,
+              "state_missing": 54,
+              "city_missing": 47,
+              "dob_added": 16,
+              "address_missing": 8,
+              "surname_added": 6,
+              "given_added": 3,
+              "city_added": 2
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 0,
+              "under_merge": 3001,
+              "under_merge_scored_only": 475
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 0,
+              "under_merge": 3001,
+              "under_merge_scored_only": 475
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 0,
+              "under_merge": 3077,
+              "under_merge_scored_only": 551
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 0,
+              "under_merge": 3077,
+              "under_merge_scored_only": 551
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 3084,
+              "under_merge_scored_only": 558
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 3780,
+              "under_merge_scored_only": 1254
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 3780,
+              "under_merge_scored_only": 1254
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 3793,
+              "under_merge_scored_only": 1267
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 3933,
+              "under_merge_scored_only": 1407
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 3933,
+              "under_merge_scored_only": 1407
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 4230,
+              "under_merge_scored_only": 1704
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 4232,
+              "under_merge_scored_only": 1706
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 4232,
+              "under_merge_scored_only": 1706
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 4760,
+              "under_merge_scored_only": 2234
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 4842,
+              "under_merge_scored_only": 2316
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 4842,
+              "under_merge_scored_only": 2316
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 5799,
+              "under_merge_scored_only": 3273
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 5811,
+              "under_merge_scored_only": 3285
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 1878,
+            "true_pairs_in_band": 1878,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 3933
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 2767,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 2767,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 2767,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 2767,
+              "threshold": 0.5,
+              "over_merge": 0,
+              "under_merge": 2767,
+              "under_merge_scored_only": 241
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 101,
+              "missed": 101,
+              "miss_rate": 1.0
+            },
+            "surname_changed": {
+              "true_pairs": 835,
+              "missed": 829,
+              "miss_rate": 0.9928
+            },
+            "given_changed": {
+              "true_pairs": 1337,
+              "missed": 1319,
+              "miss_rate": 0.9865
+            },
+            "postal_changed": {
+              "true_pairs": 897,
+              "missed": 709,
+              "miss_rate": 0.7904
+            },
+            "given_added": {
+              "true_pairs": 19,
+              "missed": 13,
+              "miss_rate": 0.6842
+            },
+            "state_changed": {
+              "true_pairs": 233,
+              "missed": 149,
+              "miss_rate": 0.6395
+            },
+            "state_missing": {
+              "true_pairs": 64,
+              "missed": 38,
+              "miss_rate": 0.5938
+            },
+            "address_changed": {
+              "true_pairs": 2476,
+              "missed": 1434,
+              "miss_rate": 0.5792
+            },
+            "city_missing": {
+              "true_pairs": 74,
+              "missed": 41,
+              "miss_rate": 0.5541
+            },
+            "city_changed": {
+              "true_pairs": 1442,
+              "missed": 771,
+              "miss_rate": 0.5347
+            },
+            "city_added": {
+              "true_pairs": 6,
+              "missed": 3,
+              "miss_rate": 0.5
+            },
+            "address_missing": {
+              "true_pairs": 6,
+              "missed": 2,
+              "miss_rate": 0.3333
+            },
+            "given_missing": {
+              "true_pairs": 144,
+              "missed": 46,
+              "miss_rate": 0.3194
+            },
+            "identical_copy": {
+              "true_pairs": 600,
+              "missed": 172,
+              "miss_rate": 0.2867
+            }
+          }
+        },
+        "B": {
+          "label": "single key, domain comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 6538,
+            "candidate_pairs": 4555,
+            "true_pairs_reachable": 4012,
+            "true_pairs_lost_to_blocking": 2526,
+            "blocking_recall": 0.6136433159987764,
+            "lost_by_condition": {
+              "surname_changed": 1978,
+              "address_changed": 1535,
+              "given_changed": 1275,
+              "city_changed": 866,
+              "postal_changed": 678,
+              "dob_changed": 498,
+              "dob_missing": 160,
+              "identical_copy": 151,
+              "state_changed": 151,
+              "surname_missing": 142,
+              "given_missing": 85,
+              "state_missing": 54,
+              "city_missing": 47,
+              "dob_added": 16,
+              "address_missing": 8,
+              "surname_added": 6,
+              "given_added": 3,
+              "city_added": 2
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 162,
+              "under_merge": 2527,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 156,
+              "under_merge": 2528,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 149,
+              "under_merge": 2532,
+              "under_merge_scored_only": 6
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 109,
+              "under_merge": 2532,
+              "under_merge_scored_only": 6
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 55,
+              "under_merge": 2535,
+              "under_merge_scored_only": 9
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 35,
+              "under_merge": 2535,
+              "under_merge_scored_only": 9
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 27,
+              "under_merge": 2535,
+              "under_merge_scored_only": 9
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 7,
+              "under_merge": 2538,
+              "under_merge_scored_only": 12
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 1,
+              "under_merge": 2542,
+              "under_merge_scored_only": 16
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 2560,
+              "under_merge_scored_only": 34
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 2576,
+              "under_merge_scored_only": 50
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 2584,
+              "under_merge_scored_only": 58
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 2600,
+              "under_merge_scored_only": 74
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 2622,
+              "under_merge_scored_only": 96
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 2668,
+              "under_merge_scored_only": 142
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 2756,
+              "under_merge_scored_only": 230
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 2801,
+              "under_merge_scored_only": 275
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 2890,
+              "under_merge_scored_only": 364
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 3002,
+              "under_merge_scored_only": 476
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 3192,
+              "under_merge_scored_only": 666
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 3808,
+              "under_merge_scored_only": 1282
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 3945,
+              "under_merge_scored_only": 1419
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 4128,
+              "under_merge_scored_only": 1602
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 4274,
+              "under_merge_scored_only": 1748
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 4649,
+              "under_merge_scored_only": 2123
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 5982,
+              "under_merge_scored_only": 3456
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 608,
+            "true_pairs_in_band": 608,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 2584
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 2543,
+              "threshold": 0.66,
+              "over_merge": 1,
+              "under_merge": 2542,
+              "under_merge_scored_only": 16
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 2552,
+              "threshold": 0.66,
+              "over_merge": 1,
+              "under_merge": 2542,
+              "under_merge_scored_only": 16
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 2560,
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 2560,
+              "under_merge_scored_only": 34
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 2560,
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 2560,
+              "under_merge_scored_only": 34
+            }
+          },
+          "by_condition_at_0.80": {
+            "address_missing": {
+              "true_pairs": 6,
+              "missed": 2,
+              "miss_rate": 0.3333
+            },
+            "dob_changed": {
+              "true_pairs": 101,
+              "missed": 33,
+              "miss_rate": 0.3267
+            },
+            "given_changed": {
+              "true_pairs": 1337,
+              "missed": 212,
+              "miss_rate": 0.1586
+            },
+            "postal_changed": {
+              "true_pairs": 897,
+              "missed": 123,
+              "miss_rate": 0.1371
+            },
+            "state_changed": {
+              "true_pairs": 233,
+              "missed": 19,
+              "miss_rate": 0.0815
+            },
+            "surname_changed": {
+              "true_pairs": 835,
+              "missed": 52,
+              "miss_rate": 0.0623
+            },
+            "address_changed": {
+              "true_pairs": 2476,
+              "missed": 143,
+              "miss_rate": 0.0578
+            },
+            "city_missing": {
+              "true_pairs": 74,
+              "missed": 4,
+              "miss_rate": 0.0541
+            },
+            "city_changed": {
+              "true_pairs": 1442,
+              "missed": 69,
+              "miss_rate": 0.0479
+            },
+            "state_missing": {
+              "true_pairs": 64,
+              "missed": 2,
+              "miss_rate": 0.0312
+            },
+            "given_missing": {
+              "true_pairs": 144,
+              "missed": 4,
+              "miss_rate": 0.0278
+            },
+            "identical_copy": {
+              "true_pairs": 600,
+              "missed": 12,
+              "miss_rate": 0.02
+            },
+            "given_added": {
+              "true_pairs": 19,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "city_added": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "C": {
+          "label": "multi-key, domain comparators",
+          "blocking": {
+            "mode": "multi",
+            "true_pairs": 6538,
+            "candidate_pairs": 7460,
+            "true_pairs_reachable": 6142,
+            "true_pairs_lost_to_blocking": 396,
+            "blocking_recall": 0.9394310186601407,
+            "lost_by_condition": {
+              "surname_changed": 280,
+              "dob_changed": 265,
+              "address_changed": 250,
+              "postal_changed": 220,
+              "given_changed": 187,
+              "city_changed": 145,
+              "dob_missing": 57,
+              "state_changed": 33,
+              "identical_copy": 14,
+              "surname_missing": 12,
+              "given_missing": 12,
+              "state_missing": 10,
+              "city_missing": 5,
+              "dob_added": 4,
+              "given_added": 1,
+              "address_missing": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 567,
+              "under_merge": 443,
+              "under_merge_scored_only": 47
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 522,
+              "under_merge": 449,
+              "under_merge_scored_only": 53
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 477,
+              "under_merge": 456,
+              "under_merge_scored_only": 60
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 394,
+              "under_merge": 470,
+              "under_merge_scored_only": 74
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 288,
+              "under_merge": 542,
+              "under_merge_scored_only": 146
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 217,
+              "under_merge": 554,
+              "under_merge_scored_only": 158
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 125,
+              "under_merge": 587,
+              "under_merge_scored_only": 191
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 32,
+              "under_merge": 613,
+              "under_merge_scored_only": 217
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 4,
+              "under_merge": 684,
+              "under_merge_scored_only": 288
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 824,
+              "under_merge_scored_only": 428
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 953,
+              "under_merge_scored_only": 557
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 1012,
+              "under_merge_scored_only": 616
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 1074,
+              "under_merge_scored_only": 678
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 1177,
+              "under_merge_scored_only": 781
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 1366,
+              "under_merge_scored_only": 970
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 1575,
+              "under_merge_scored_only": 1179
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 1704,
+              "under_merge_scored_only": 1308
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 1849,
+              "under_merge_scored_only": 1453
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 2056,
+              "under_merge_scored_only": 1660
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 2422,
+              "under_merge_scored_only": 2026
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 3181,
+              "under_merge_scored_only": 2785
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 3400,
+              "under_merge_scored_only": 3004
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 3612,
+              "under_merge_scored_only": 3216
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 3817,
+              "under_merge_scored_only": 3421
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 4334,
+              "under_merge_scored_only": 3938
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 5893,
+              "under_merge_scored_only": 5497
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 1410,
+            "true_pairs_in_band": 1410,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 1012
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 645,
+              "threshold": 0.64,
+              "over_merge": 32,
+              "under_merge": 613,
+              "under_merge_scored_only": 217
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 724,
+              "threshold": 0.66,
+              "over_merge": 4,
+              "under_merge": 684,
+              "under_merge_scored_only": 288
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 824,
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 824,
+              "under_merge_scored_only": 428
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 824,
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 824,
+              "under_merge_scored_only": 428
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_changed": {
+              "true_pairs": 334,
+              "missed": 242,
+              "miss_rate": 0.7246
+            },
+            "address_missing": {
+              "true_pairs": 13,
+              "missed": 6,
+              "miss_rate": 0.4615
+            },
+            "given_changed": {
+              "true_pairs": 2425,
+              "missed": 906,
+              "miss_rate": 0.3736
+            },
+            "surname_changed": {
+              "true_pairs": 2533,
+              "missed": 828,
+              "miss_rate": 0.3269
+            },
+            "postal_changed": {
+              "true_pairs": 1355,
+              "missed": 427,
+              "miss_rate": 0.3151
+            },
+            "state_changed": {
+              "true_pairs": 351,
+              "missed": 84,
+              "miss_rate": 0.2393
+            },
+            "state_missing": {
+              "true_pairs": 108,
+              "missed": 25,
+              "miss_rate": 0.2315
+            },
+            "city_changed": {
+              "true_pairs": 2163,
+              "missed": 420,
+              "miss_rate": 0.1942
+            },
+            "address_changed": {
+              "true_pairs": 3761,
+              "missed": 721,
+              "miss_rate": 0.1917
+            },
+            "surname_added": {
+              "true_pairs": 6,
+              "missed": 1,
+              "miss_rate": 0.1667
+            },
+            "dob_added": {
+              "true_pairs": 12,
+              "missed": 2,
+              "miss_rate": 0.1667
+            },
+            "given_missing": {
+              "true_pairs": 217,
+              "missed": 26,
+              "miss_rate": 0.1198
+            },
+            "city_missing": {
+              "true_pairs": 116,
+              "missed": 12,
+              "miss_rate": 0.1034
+            },
+            "surname_missing": {
+              "true_pairs": 130,
+              "missed": 10,
+              "miss_rate": 0.0769
+            },
+            "identical_copy": {
+              "true_pairs": 737,
+              "missed": 55,
+              "miss_rate": 0.0746
+            },
+            "given_added": {
+              "true_pairs": 21,
+              "missed": 1,
+              "miss_rate": 0.0476
+            },
+            "dob_missing": {
+              "true_pairs": 103,
+              "missed": 3,
+              "miss_rate": 0.0291
+            },
+            "city_added": {
+              "true_pairs": 8,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "control": {
+      "description": "generated here; must be matchable",
+      "counts": {
+        "records": 3026,
+        "people": 2000,
+        "true_pairs": 1026,
+        "max_records_per_person": 2
+      },
+      "arms": {
+        "A": {
+          "label": "single key, exact-match comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 1026,
+            "candidate_pairs": 3100,
+            "true_pairs_reachable": 811,
+            "true_pairs_lost_to_blocking": 215,
+            "blocking_recall": 0.7904483430799221,
+            "lost_by_condition": {
+              "name_change": 123,
+              "typo_surname": 88,
+              "moved": 59,
+              "phone_changed": 53,
+              "nickname": 49,
+              "dob_typo": 34,
+              "missing_phone": 34,
+              "typo_given": 32,
+              "missing_address": 16,
+              "dob_transposed": 6,
+              "compound_split": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 1,
+              "under_merge": 232,
+              "under_merge_scored_only": 17
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 1,
+              "under_merge": 234,
+              "under_merge_scored_only": 19
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 1,
+              "under_merge": 238,
+              "under_merge_scored_only": 23
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 1,
+              "under_merge": 249,
+              "under_merge_scored_only": 34
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 1,
+              "under_merge": 254,
+              "under_merge_scored_only": 39
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 1,
+              "under_merge": 254,
+              "under_merge_scored_only": 39
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 301,
+              "under_merge_scored_only": 86
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 0,
+              "under_merge": 301,
+              "under_merge_scored_only": 86
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 0,
+              "under_merge": 334,
+              "under_merge_scored_only": 119
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 0,
+              "under_merge": 334,
+              "under_merge_scored_only": 119
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 372,
+              "under_merge_scored_only": 157
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 380,
+              "under_merge_scored_only": 165
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 394,
+              "under_merge_scored_only": 179
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 416,
+              "under_merge_scored_only": 201
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 419,
+              "under_merge_scored_only": 204
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 484,
+              "under_merge_scored_only": 269
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 518,
+              "under_merge_scored_only": 303
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 599,
+              "under_merge_scored_only": 384
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 615,
+              "under_merge_scored_only": 400
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 699,
+              "under_merge_scored_only": 484
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 701,
+              "under_merge_scored_only": 486
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 710,
+              "under_merge_scored_only": 495
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 710,
+              "under_merge_scored_only": 495
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 710,
+              "under_merge_scored_only": 495
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 710,
+              "under_merge_scored_only": 495
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 710,
+              "under_merge_scored_only": 495
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 319,
+            "true_pairs_in_band": 319,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 380
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 233,
+              "threshold": 0.5,
+              "over_merge": 1,
+              "under_merge": 232,
+              "under_merge_scored_only": 17
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 242,
+              "threshold": 0.5,
+              "over_merge": 1,
+              "under_merge": 232,
+              "under_merge_scored_only": 17
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 282,
+              "threshold": 0.5,
+              "over_merge": 1,
+              "under_merge": 232,
+              "under_merge_scored_only": 17
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 301,
+              "threshold": 0.62,
+              "over_merge": 0,
+              "under_merge": 301,
+              "under_merge_scored_only": 86
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_transposed": {
+              "true_pairs": 21,
+              "missed": 21,
+              "miss_rate": 1.0
+            },
+            "dob_typo": {
+              "true_pairs": 19,
+              "missed": 19,
+              "miss_rate": 1.0
+            },
+            "moved": {
+              "true_pairs": 237,
+              "missed": 199,
+              "miss_rate": 0.8397
+            },
+            "compound_split": {
+              "true_pairs": 6,
+              "missed": 5,
+              "miss_rate": 0.8333
+            },
+            "typo_surname": {
+              "true_pairs": 31,
+              "missed": 21,
+              "miss_rate": 0.6774
+            },
+            "typo_given": {
+              "true_pairs": 101,
+              "missed": 54,
+              "miss_rate": 0.5347
+            },
+            "phone_changed": {
+              "true_pairs": 194,
+              "missed": 98,
+              "miss_rate": 0.5052
+            },
+            "nickname": {
+              "true_pairs": 166,
+              "missed": 76,
+              "miss_rate": 0.4578
+            },
+            "missing_phone": {
+              "true_pairs": 125,
+              "missed": 36,
+              "miss_rate": 0.288
+            },
+            "missing_address": {
+              "true_pairs": 85,
+              "missed": 21,
+              "miss_rate": 0.2471
+            },
+            "no_condition": {
+              "true_pairs": 218,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "name_change": {
+              "true_pairs": 5,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "B": {
+          "label": "single key, domain comparators",
+          "blocking": {
+            "mode": "single",
+            "true_pairs": 1026,
+            "candidate_pairs": 3100,
+            "true_pairs_reachable": 811,
+            "true_pairs_lost_to_blocking": 215,
+            "blocking_recall": 0.7904483430799221,
+            "lost_by_condition": {
+              "name_change": 123,
+              "typo_surname": 88,
+              "moved": 59,
+              "phone_changed": 53,
+              "nickname": 49,
+              "dob_typo": 34,
+              "missing_phone": 34,
+              "typo_given": 32,
+              "missing_address": 16,
+              "dob_transposed": 6,
+              "compound_split": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 425,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 300,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 205,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 150,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 96,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 56,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 31,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 23,
+              "under_merge": 215,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 12,
+              "under_merge": 216,
+              "under_merge_scored_only": 1
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 2,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 0,
+              "under_merge": 231,
+              "under_merge_scored_only": 16
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 0,
+              "under_merge": 249,
+              "under_merge_scored_only": 34
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 0,
+              "under_merge": 259,
+              "under_merge_scored_only": 44
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 261,
+              "under_merge_scored_only": 46
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 265,
+              "under_merge_scored_only": 50
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 273,
+              "under_merge_scored_only": 58
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 310,
+              "under_merge_scored_only": 95
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 398,
+              "under_merge_scored_only": 183
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 510,
+              "under_merge_scored_only": 295
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 522,
+              "under_merge_scored_only": 307
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 540,
+              "under_merge_scored_only": 325
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 564,
+              "under_merge_scored_only": 349
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 586,
+              "under_merge_scored_only": 371
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 604,
+              "under_merge_scored_only": 389
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 651,
+              "under_merge_scored_only": 436
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 279,
+            "true_pairs_in_band": 279,
+            "false_pairs_in_band": 0,
+            "auto_over_merge": 0,
+            "auto_under_merge": 231
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 217,
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 217,
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 217,
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 217,
+              "threshold": 0.7,
+              "over_merge": 0,
+              "under_merge": 217,
+              "under_merge_scored_only": 2
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_typo": {
+              "true_pairs": 19,
+              "missed": 8,
+              "miss_rate": 0.4211
+            },
+            "phone_changed": {
+              "true_pairs": 194,
+              "missed": 47,
+              "miss_rate": 0.2423
+            },
+            "moved": {
+              "true_pairs": 237,
+              "missed": 45,
+              "miss_rate": 0.1899
+            },
+            "compound_split": {
+              "true_pairs": 6,
+              "missed": 1,
+              "miss_rate": 0.1667
+            },
+            "typo_surname": {
+              "true_pairs": 31,
+              "missed": 3,
+              "miss_rate": 0.0968
+            },
+            "dob_transposed": {
+              "true_pairs": 21,
+              "missed": 2,
+              "miss_rate": 0.0952
+            },
+            "missing_address": {
+              "true_pairs": 85,
+              "missed": 8,
+              "miss_rate": 0.0941
+            },
+            "nickname": {
+              "true_pairs": 166,
+              "missed": 12,
+              "miss_rate": 0.0723
+            },
+            "typo_given": {
+              "true_pairs": 101,
+              "missed": 7,
+              "miss_rate": 0.0693
+            },
+            "missing_phone": {
+              "true_pairs": 125,
+              "missed": 1,
+              "miss_rate": 0.008
+            },
+            "no_condition": {
+              "true_pairs": 218,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "name_change": {
+              "true_pairs": 5,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        },
+        "C": {
+          "label": "multi-key, domain comparators",
+          "blocking": {
+            "mode": "multi",
+            "true_pairs": 1026,
+            "candidate_pairs": 33211,
+            "true_pairs_reachable": 1022,
+            "true_pairs_lost_to_blocking": 4,
+            "blocking_recall": 0.9961013645224172,
+            "lost_by_condition": {
+              "moved": 4,
+              "dob_typo": 4,
+              "missing_phone": 2,
+              "phone_changed": 2,
+              "typo_given": 2,
+              "name_change": 1
+            }
+          },
+          "sweep": [
+            {
+              "threshold": 0.5,
+              "over_merge": 2959,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.52,
+              "over_merge": 1817,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.54,
+              "over_merge": 1076,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.56,
+              "over_merge": 529,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.58,
+              "over_merge": 307,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.6,
+              "over_merge": 176,
+              "under_merge": 4,
+              "under_merge_scored_only": 0
+            },
+            {
+              "threshold": 0.62,
+              "over_merge": 101,
+              "under_merge": 8,
+              "under_merge_scored_only": 4
+            },
+            {
+              "threshold": 0.64,
+              "over_merge": 50,
+              "under_merge": 12,
+              "under_merge_scored_only": 8
+            },
+            {
+              "threshold": 0.66,
+              "over_merge": 27,
+              "under_merge": 16,
+              "under_merge_scored_only": 12
+            },
+            {
+              "threshold": 0.68,
+              "over_merge": 9,
+              "under_merge": 21,
+              "under_merge_scored_only": 17
+            },
+            {
+              "threshold": 0.7,
+              "over_merge": 3,
+              "under_merge": 29,
+              "under_merge_scored_only": 25
+            },
+            {
+              "threshold": 0.72,
+              "over_merge": 2,
+              "under_merge": 47,
+              "under_merge_scored_only": 43
+            },
+            {
+              "threshold": 0.74,
+              "over_merge": 1,
+              "under_merge": 66,
+              "under_merge_scored_only": 62
+            },
+            {
+              "threshold": 0.76,
+              "over_merge": 1,
+              "under_merge": 81,
+              "under_merge_scored_only": 77
+            },
+            {
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 97,
+              "under_merge_scored_only": 93
+            },
+            {
+              "threshold": 0.8,
+              "over_merge": 0,
+              "under_merge": 116,
+              "under_merge_scored_only": 112
+            },
+            {
+              "threshold": 0.82,
+              "over_merge": 0,
+              "under_merge": 134,
+              "under_merge_scored_only": 130
+            },
+            {
+              "threshold": 0.84,
+              "over_merge": 0,
+              "under_merge": 185,
+              "under_merge_scored_only": 181
+            },
+            {
+              "threshold": 0.86,
+              "over_merge": 0,
+              "under_merge": 279,
+              "under_merge_scored_only": 275
+            },
+            {
+              "threshold": 0.88,
+              "over_merge": 0,
+              "under_merge": 402,
+              "under_merge_scored_only": 398
+            },
+            {
+              "threshold": 0.9,
+              "over_merge": 0,
+              "under_merge": 431,
+              "under_merge_scored_only": 427
+            },
+            {
+              "threshold": 0.92,
+              "over_merge": 0,
+              "under_merge": 482,
+              "under_merge_scored_only": 478
+            },
+            {
+              "threshold": 0.94,
+              "over_merge": 0,
+              "under_merge": 523,
+              "under_merge_scored_only": 519
+            },
+            {
+              "threshold": 0.96,
+              "over_merge": 0,
+              "under_merge": 548,
+              "under_merge_scored_only": 544
+            },
+            {
+              "threshold": 0.98,
+              "over_merge": 0,
+              "under_merge": 569,
+              "under_merge_scored_only": 565
+            },
+            {
+              "threshold": 1.0,
+              "over_merge": 0,
+              "under_merge": 651,
+              "under_merge_scored_only": 647
+            }
+          ],
+          "review_band": {
+            "low": 0.72,
+            "high": 0.88,
+            "pairs_in_band": 357,
+            "true_pairs_in_band": 355,
+            "false_pairs_in_band": 2,
+            "auto_over_merge": 0,
+            "auto_under_merge": 47
+          },
+          "operating_points": {
+            "1": {
+              "harm_ratio": 1,
+              "cost": 30,
+              "threshold": 0.68,
+              "over_merge": 9,
+              "under_merge": 21,
+              "under_merge_scored_only": 17
+            },
+            "10": {
+              "harm_ratio": 10,
+              "cost": 59,
+              "threshold": 0.7,
+              "over_merge": 3,
+              "under_merge": 29,
+              "under_merge_scored_only": 25
+            },
+            "50": {
+              "harm_ratio": 50,
+              "cost": 97,
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 97,
+              "under_merge_scored_only": 93
+            },
+            "100": {
+              "harm_ratio": 100,
+              "cost": 97,
+              "threshold": 0.78,
+              "over_merge": 0,
+              "under_merge": 97,
+              "under_merge_scored_only": 93
+            }
+          },
+          "by_condition_at_0.80": {
+            "dob_typo": {
+              "true_pairs": 49,
+              "missed": 24,
+              "miss_rate": 0.4898
+            },
+            "name_change": {
+              "true_pairs": 127,
+              "missed": 49,
+              "miss_rate": 0.3858
+            },
+            "phone_changed": {
+              "true_pairs": 245,
+              "missed": 84,
+              "miss_rate": 0.3429
+            },
+            "moved": {
+              "true_pairs": 292,
+              "missed": 80,
+              "miss_rate": 0.274
+            },
+            "dob_transposed": {
+              "true_pairs": 27,
+              "missed": 4,
+              "miss_rate": 0.1481
+            },
+            "compound_split": {
+              "true_pairs": 7,
+              "missed": 1,
+              "miss_rate": 0.1429
+            },
+            "typo_given": {
+              "true_pairs": 131,
+              "missed": 17,
+              "miss_rate": 0.1298
+            },
+            "typo_surname": {
+              "true_pairs": 119,
+              "missed": 14,
+              "miss_rate": 0.1176
+            },
+            "nickname": {
+              "true_pairs": 215,
+              "missed": 25,
+              "miss_rate": 0.1163
+            },
+            "missing_address": {
+              "true_pairs": 101,
+              "missed": 11,
+              "miss_rate": 0.1089
+            },
+            "missing_phone": {
+              "true_pairs": 157,
+              "missed": 10,
+              "miss_rate": 0.0637
+            },
+            "no_condition": {
+              "true_pairs": 218,
+              "missed": 0,
+              "miss_rate": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "runtime_seconds": 2.0
+}
