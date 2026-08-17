@@ -120,11 +120,19 @@ versioned, and arguable by someone who does not write code.
 
 ## The same file, read as two countries
 
-FEBRL carries a national identifier, because the country it was built in has one.
-The United States does not. Since the FY1999 Labor–HHS appropriations act,
-Congress has renewed a rider — Section 510 — barring HHS from spending any funds
-to adopt a unique patient identifier. Provider and informatics groups were still
-petitioning for its repeal in 2025.
+FEBRL ships a `soc_sec_id` column: a synthetic, social-security-style national
+identifier. It is not any country's health identifier, so read it as *a strong
+shared identifier is available*, not as a claim about Australia.
+
+US patient matching across organisations usually has no such field, and that is
+a decision rather than an accident. HIPAA ordered HHS to adopt a unique health
+identifier in 1996. A rider first attached to the FY1999 Labor–HHS
+appropriations act — Section 510 — barred any federal funding to do so, and it
+has been carried forward in every Labor–HHS bill since. Appropriators dropped it
+once, for FY2021, and it was restored. AHIMA, MGMA, HIMSS and the Patient ID Now
+coalition were still campaigning for repeal in 2025. I could not verify the
+FY2026 text either way, so treat "still in force" as accurate through 2025 and
+unconfirmed after.
 
 `load_febrl("febrl3", drop_identifier=True)` blanks the field and changes nothing
 else. Arm C, both runs:
@@ -137,9 +145,16 @@ else. Arm C, both runs:
 Removing one column triples the under-merges and triples the over-merges.
 
 **This repo takes no position on whether the United States should have a national
-patient identifier.** There are serious privacy arguments against one, and they
-are not mine to adjudicate. What is measurable is the cost of not having one, and
-that number belongs in the argument rather than outside it.
+patient identifier.** The objections are substantive — a single lifelong
+identifier linked to a full medical history is a concentrated breach target and a
+durable surveillance key, and opponents from Ron Paul in 1998 to Rand Paul more
+recently have made that case in those terms. Cost estimates for building one have
+ranged from roughly $1.5bn to $11bn. Those are real arguments and they are not
+mine to adjudicate.
+
+What is measurable is the cost of *not* having one, and that number belongs
+inside the argument rather than outside it. The table above is one estimate of it
+on one benchmark.
 
 ## Who the failures land on
 

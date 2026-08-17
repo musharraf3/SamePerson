@@ -52,15 +52,22 @@ def _person_id(rec_id: str) -> str:
 
 def load_febrl(name: str = "febrl1",
                drop_identifier: bool = False) -> list[Record]:
-    """`drop_identifier=True` blanks soc_sec_id on every record.
+    """`drop_identifier=True` blanks the soc_sec_id column on every record.
 
-    FEBRL carries a national identifier because the country it was built in
-    has one. The United States does not: since the FY1999 Labor-HHS
-    appropriations act, Congress has renewed a rider forbidding HHS from
-    spending any funds to adopt a unique patient identifier. So the same
-    file, read twice, is two different countries - and the difference
-    between the two runs is the part of the problem that is a policy choice
-    rather than an engineering one.
+    FEBRL ships a national-identifier-shaped field. It is a synthetic
+    social-security-style number, not any country's health identifier, so
+    read this as "a strong shared identifier is available" rather than as a
+    claim about Australia.
+
+    That distinction is the point. US patient matching across organisations
+    usually has no such field. HIPAA itself ordered HHS to adopt a unique
+    health identifier in 1996; a rider first attached to the FY1999
+    Labor-HHS appropriations act blocked any funding to do it, and the rider
+    has been carried forward every year since.
+
+    So the two runs are the same records with and without the one field that
+    would make this easy. The gap between them is the share of the problem
+    that is a policy choice rather than an engineering one.
     """
     fn, _desc = DATASETS[name]
     path = os.path.join(DATA, fn)

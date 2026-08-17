@@ -29,8 +29,8 @@
               "dob_missing": 15,
               "surname_missing": 6,
               "state_changed": 2,
-              "city_missing": 2,
               "state_missing": 2,
+              "city_missing": 2,
               "state_added": 1,
               "given_missing": 1
             }
@@ -297,12 +297,12 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "given_added": {
+            "address_missing": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
             },
-            "address_missing": {
+            "given_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -329,8 +329,8 @@
               "dob_missing": 15,
               "surname_missing": 6,
               "state_changed": 2,
-              "city_missing": 2,
               "state_missing": 2,
+              "city_missing": 2,
               "state_added": 1,
               "given_missing": 1
             }
@@ -582,8 +582,8 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "city_missing": {
-              "true_pairs": 4,
+            "identical_copy": {
+              "true_pairs": 31,
               "missed": 0,
               "miss_rate": 0.0
             },
@@ -592,17 +592,17 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "identical_copy": {
-              "true_pairs": 31,
-              "missed": 0,
-              "miss_rate": 0.0
-            },
-            "given_added": {
-              "true_pairs": 1,
+            "city_missing": {
+              "true_pairs": 4,
               "missed": 0,
               "miss_rate": 0.0
             },
             "address_missing": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "given_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -619,9 +619,9 @@
             "true_pairs_lost_to_blocking": 1,
             "blocking_recall": 0.998,
             "lost_by_condition": {
-              "dob_changed": 1,
+              "surname_changed": 1,
               "identifier_changed": 1,
-              "surname_changed": 1
+              "dob_changed": 1
             }
           },
           "sweep": [
@@ -856,12 +856,12 @@
               "missed": 8,
               "miss_rate": 0.1633
             },
-            "given_missing": {
+            "dob_missing": {
               "true_pairs": 15,
               "missed": 2,
               "miss_rate": 0.1333
             },
-            "dob_missing": {
+            "given_missing": {
               "true_pairs": 15,
               "missed": 2,
               "miss_rate": 0.1333
@@ -876,8 +876,8 @@
               "missed": 14,
               "miss_rate": 0.1029
             },
-            "city_missing": {
-              "true_pairs": 6,
+            "identical_copy": {
+              "true_pairs": 31,
               "missed": 0,
               "miss_rate": 0.0
             },
@@ -891,12 +891,12 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "identical_copy": {
-              "true_pairs": 31,
+            "city_missing": {
+              "true_pairs": 6,
               "missed": 0,
               "miss_rate": 0.0
             },
-            "given_added": {
+            "state_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -906,7 +906,7 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "state_added": {
+            "given_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -1505,13 +1505,13 @@
               "missed": 4,
               "miss_rate": 0.0137
             },
-            "identical_copy": {
-              "true_pairs": 169,
+            "city_missing": {
+              "true_pairs": 24,
               "missed": 0,
               "miss_rate": 0.0
             },
-            "city_missing": {
-              "true_pairs": 24,
+            "identical_copy": {
+              "true_pairs": 169,
               "missed": 0,
               "miss_rate": 0.0
             },
@@ -1525,17 +1525,17 @@
               "missed": 0,
               "miss_rate": 0.0
             },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
             "address_missing": {
               "true_pairs": 4,
               "missed": 0,
               "miss_rate": 0.0
             },
             "state_added": {
-              "true_pairs": 1,
-              "missed": 0,
-              "miss_rate": 0.0
-            },
-            "given_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -1553,15 +1553,15 @@
             "blocking_recall": 0.9922440537745605,
             "lost_by_condition": {
               "identifier_changed": 15,
-              "dob_changed": 12,
               "given_changed": 12,
+              "dob_changed": 12,
               "surname_changed": 10,
               "address_changed": 10,
               "city_changed": 7,
               "postal_changed": 4,
               "dob_missing": 2,
-              "state_changed": 1,
               "surname_missing": 1,
+              "state_changed": 1,
               "dob_added": 1,
               "identical_copy": 1
             }
@@ -1848,6 +1848,11 @@
               "missed": 10,
               "miss_rate": 0.0469
             },
+            "given_added": {
+              "true_pairs": 1,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
             "city_added": {
               "true_pairs": 3,
               "missed": 0,
@@ -1859,11 +1864,6 @@
               "miss_rate": 0.0
             },
             "state_added": {
-              "true_pairs": 1,
-              "missed": 0,
-              "miss_rate": 0.0
-            },
-            "given_added": {
               "true_pairs": 1,
               "missed": 0,
               "miss_rate": 0.0
@@ -2484,17 +2484,17 @@
               "missed": 0,
               "miss_rate": 0.0
             },
-            "address_missing": {
-              "true_pairs": 6,
-              "missed": 0,
-              "miss_rate": 0.0
-            },
             "given_added": {
               "true_pairs": 19,
               "missed": 0,
               "miss_rate": 0.0
             },
             "city_added": {
+              "true_pairs": 6,
+              "missed": 0,
+              "miss_rate": 0.0
+            },
+            "address_missing": {
               "true_pairs": 6,
               "missed": 0,
               "miss_rate": 0.0
@@ -2515,14 +2515,14 @@
               "dob_changed": 35,
               "address_changed": 34,
               "surname_changed": 29,
-              "postal_changed": 24,
               "given_changed": 24,
+              "postal_changed": 24,
               "city_changed": 18,
               "state_changed": 4,
               "identical_copy": 3,
-              "dob_missing": 1,
+              "given_missing": 1,
               "city_missing": 1,
-              "given_missing": 1
+              "dob_missing": 1
             }
           },
           "sweep": [
@@ -2812,13 +2812,13 @@
               "missed": 1,
               "miss_rate": 0.0455
             },
-            "surname_added": {
-              "true_pairs": 6,
+            "city_added": {
+              "true_pairs": 8,
               "missed": 0,
               "miss_rate": 0.0
             },
-            "city_added": {
-              "true_pairs": 8,
+            "surname_added": {
+              "true_pairs": 6,
               "missed": 0,
               "miss_rate": 0.0
             }
@@ -3462,8 +3462,8 @@
               "dob_missing": 57,
               "state_changed": 33,
               "identical_copy": 14,
-              "surname_missing": 12,
               "given_missing": 12,
+              "surname_missing": 12,
               "state_missing": 10,
               "city_missing": 5,
               "dob_added": 4,
@@ -4360,11 +4360,11 @@
             "true_pairs_lost_to_blocking": 4,
             "blocking_recall": 0.9961013645224172,
             "lost_by_condition": {
-              "moved": 4,
               "dob_typo": 4,
+              "moved": 4,
               "missing_phone": 2,
-              "phone_changed": 2,
               "typo_given": 2,
+              "phone_changed": 2,
               "name_change": 1
             }
           },
@@ -4635,5 +4635,5 @@
       }
     }
   },
-  "runtime_seconds": 2.0
+  "runtime_seconds": 1.7
 }
